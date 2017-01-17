@@ -1,0 +1,3 @@
+C:\Users\test\Desktop\Project1\KerbClientProject\bin\Debug\Project1.exe.config
+C:\Users\test\Desktop\Project1\KerbClientProject\obj\x86\Debug\Project1.exe
+C:\Users\test\Desktop\Project1\KerbClientProject\obj\x86\Debug\Project1.pdb

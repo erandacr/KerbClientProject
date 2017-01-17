@@ -1,0 +1,5 @@
+C:\Users\test\AppData\Local\Temporary Projects\Project1\bin\Debug\Project1.exe
+C:\Users\test\AppData\Local\Temporary Projects\Project1\bin\Debug\Project1.pdb
+C:\Users\test\AppData\Local\Temporary Projects\Project1\obj\x86\Debug\Project1.exe
+C:\Users\test\AppData\Local\Temporary Projects\Project1\obj\x86\Debug\Project1.pdb
+C:\Users\test\AppData\Local\Temporary Projects\Project1\obj\x86\Debug\Project1.csprojResolveAssemblyReference.cache

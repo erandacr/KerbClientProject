@@ -1,0 +1,5 @@
+C:\Users\test\Desktop\Project1\Project1\bin\Release\Project1.exe.config
+C:\Users\test\Desktop\Project1\Project1\bin\Release\Project1.exe
+C:\Users\test\Desktop\Project1\Project1\bin\Release\Project1.pdb
+C:\Users\test\Desktop\Project1\Project1\obj\x86\Release\Project1.exe
+C:\Users\test\Desktop\Project1\Project1\obj\x86\Release\Project1.pdb
