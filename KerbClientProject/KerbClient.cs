@@ -17,7 +17,7 @@ namespace KerbClientProject
     class KerbClient
     {
         // Name of the serivce we are trying to invoke
-        static string serviceName = "apimserver";
+        static string serviceName = "HTTP/apimserver.example.com@EXAMPLE.COM";
         // API parameters
         static string URI = "https://idp.example.com:9443/oauth2/token";
         static string username = "1ouL2fO6SxlfD2LDw125cTo0vQka";
@@ -32,8 +32,8 @@ namespace KerbClientProject
 
             using (var domainContext = new PrincipalContext(ContextType.Domain, domain))
             {
-                string spn = UserPrincipal.FindByIdentity(domainContext, IdentityType.SamAccountName, serviceName).UserPrincipalName;
-                KerberosSecurityTokenProvider tokenProvider = new KerberosSecurityTokenProvider(spn, System.Security.Principal.TokenImpersonationLevel.Identification, CredentialCache.DefaultNetworkCredentials);
+                //string spn = UserPrincipal.FindByIdentity(domainContext, IdentityType.SamAccountName, serviceName).UserPrincipalName;
+                KerberosSecurityTokenProvider tokenProvider = new KerberosSecurityTokenProvider(serviceName, System.Security.Principal.TokenImpersonationLevel.Identification, CredentialCache.DefaultNetworkCredentials);
                 KerberosRequestorSecurityToken securityToken = tokenProvider.GetToken(TimeSpan.FromMinutes(5)) as KerberosRequestorSecurityToken;
                 string serviceToken = Convert.ToBase64String(securityToken.GetRequest());
                 string encodedToken = HttpUtility.UrlEncode(serviceToken);
