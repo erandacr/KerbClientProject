@@ -23,6 +23,8 @@ namespace KerbClientProject
         static string username = "1ouL2fO6SxlfD2LDw125cTo0vQka";
         static string password = "uUEtm89tY6QZuZUmqZfL92BDFeAa";
 
+        static string realm_Name = "example.com";
+
         static void Main()
         {
             AppDomain.CurrentDomain.SetPrincipalPolicy(System.Security.Principal.PrincipalPolicy.WindowsPrincipal);
@@ -41,7 +43,8 @@ namespace KerbClientProject
 
         static string buildRequest(string token)
         {
-            return "grant_type=kerberos&kerberos_token=" + token;
+
+            return "grant_type=kerberos&kerberos_realm=" + realm_Name + "&kerberos_token=" + token;
         }
 
         static string HttpPostq(string Parameters)
